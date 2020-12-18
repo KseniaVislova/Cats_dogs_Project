@@ -1,0 +1,159 @@
+/*Светлая тема*/
+
+.light-theme {
+  color: black;
+  background: linear-gradient(315deg, #d9e4f5, #f5e3e6);
+  background-size: 400% 400%;
+  animation: gradient 30s linear infinite;
+}
+
+/*анимация фона*/
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*кнопка для смены темы*/
+
+.light-theme .header-animation {
+  background-image: url(/icons/cat_dog.png);
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: 3% auto;
+  border: 1px solid black;
+}
+
+.light-theme .theme-button,
+.light-theme .again-button {
+  background-image: linear-gradient(315deg, #d9e4f5, #f5e3e6);
+  background-size: 400% 400%;
+  animation: gradient 5s linear infinite;
+  box-shadow: inset 0px 0px 2px black;
+  border: solid 1px black;
+}
+
+.light-theme .theme-button:hover,
+.light-theme .again-button:hover {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  background-size: 400% 400%;
+  box-shadow: inset 0px 0px 5px rgb(255, 255, 255);
+  border: solid 1px #0f2027;
+}
+
+/* Блок о настроении*/
+
+.light-theme p {
+  color: black;
+}
+
+/* Стилизация кнопок*/
+
+.light-theme .type button,
+.light-theme .choice .button-animation .button {
+  color: black;
+  background-image: linear-gradient(315deg, #d9e4f5, #f5e3e6);
+  background-size: 400% 400%;
+  animation: gradient 30s linear infinite;
+  box-shadow: inset 0px 0px 5px black;
+  border: solid 1px black;
+}
+
+.light-theme .type button:hover,
+.light-theme .choice .button-animation .button:hover {
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  background-size: 400% 400%;
+  box-shadow: inset 0px 0px 10px rgb(255, 255, 255);
+  border: solid 1px #0f2027;
+}
+
+/*Стилизация заголовков*/
+
+/* Темная тема*/
+
+.black-theme {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  background-size: 200% 200%;
+}
+
+/*кнопка для смены темы*/
+
+.black-theme .header-animation {
+  background-image: url(/icons/cat_dog_for_black.png);
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: 3% auto;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+/* Блок о настроении*/
+
+.black-theme p {
+  color: rgb(255, 255, 255);
+}
+
+/* Стилизация кнопок*/
+
+.black-theme .type button,
+.black-theme .choice .button-animation .button {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  background-size: 400% 400%;
+  box-shadow: inset 0px 0px 10px rgb(255, 255, 255);
+  border: solid 1px #0f2027;
+}
+
+.black-theme .type button:hover,
+.black-theme .choice .button-animation .button:hover {
+  color: black;
+  background-image: linear-gradient(315deg, #d9e4f5, #f5e3e6);
+  background-size: 400% 400%;
+  animation: gradient 30s linear infinite;
+  box-shadow: inset 0px 0px 5px black;
+  border: solid 1px black;
+}
+
+.black-theme .type button img,
+.black-theme .choice .button-animation .button img,
+.black-theme a img {
+  filter: invert(100%);
+}
+
+.black-theme .type button img:hover,
+.black-theme .choice .button-animation .button img:hover,
+.black-theme a img:hover {
+  filter: invert(0%);
+}
+
+.black-theme .theme-button,
+.black-theme .again-button {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  background-size: 400% 400%;
+  box-shadow: inset 0px 0px 5px rgb(255, 255, 255);
+  border: solid 1px #0f2027;
+}
+
+.black-theme .theme-button:hover,
+.black-theme .again-button:hover {
+  background-image: linear-gradient(315deg, #d9e4f5, #f5e3e6);
+  background-size: 400% 400%;
+  animation: gradient 30s linear infinite;
+  box-shadow: inset 0px 0px 2px black;
+  border: solid 1px black;
+  color: black;
+}
+
+.black-theme .mood p,
+.black-theme .pets p {
+  background-color: rgba(0, 0, 0, 0.05);
+}

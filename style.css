@@ -1,0 +1,380 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1344px;
+  height: 100%;
+  min-width: 1024px;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  transition: 0.5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
+}
+
+a,
+button,
+input {
+  outline: inherit;
+  cursor: pointer;
+}
+
+.header {
+  height: 20vh;
+}
+
+/*.title {
+}*/
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+/*Кнопка по смене темы*/
+
+.header-animation {
+  width: 100%;
+  height: 9vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.theme-button {
+  border-radius: 10px;
+  width: 20vh;
+  height: auto;
+  text-align: center;
+  position: fixed;
+  z-index: 2;
+
+  padding: 1vh;
+  font-size: 2vh;
+  top: 12vh;
+  left: 5vh;
+}
+
+.again-button {
+  border-radius: 10px;
+  width: 20vh;
+  height: auto;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  top: 12vh;
+  right: 5vh;
+
+  padding: 1vh;
+  font-size: 2vh;
+}
+
+/* Вопрос о настроение */
+.mood {
+  width: 75%;
+  margin: 0 auto;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.mood p {
+  font-family: 'Bitter', serif;
+  font-weight: 800;
+  font-size: 45px;
+  text-align: center;
+  margin: 2em auto 0;
+  width: 70%;
+
+  padding: 0.5rem 0;
+  box-decoration-break: clone;
+
+  text-transform: uppercase;
+  border-radius: 1em;
+}
+
+.type {
+  width: 90%;
+  margin: 0.9em auto 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  border-radius: 10px;
+  margin: 2em 1.5em;
+  padding: 1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .icons {
+  width: 40px;
+}
+
+.button span {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  font-size: 20px;
+  width: 100%;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.686);
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Анимация кнопок*/
+
+.button:hover {
+  box-shadow: 0 0 50px black;
+}
+
+/*Выбор животного*/
+
+.pets {
+  width: 90%;
+  margin: 0 auto;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.pets p {
+  font-family: 'Bitter', serif;
+  font-weight: 800;
+  font-size: 45px;
+  text-align: center;
+  margin: 10vh auto 0;
+  width: 60%;
+
+  padding: 0.5rem 1rem;
+  box-decoration-break: clone;
+
+  text-transform: uppercase;
+  border-radius: 1em;
+}
+
+.choice {
+  width: 50%;
+  margin: 1vh auto 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.choice div .button {
+  border-radius: 10px;
+}
+
+.choice div .button .cats,
+.choice div .button .dogs {
+  width: 200px;
+  height: 200px;
+}
+
+/* Оформление итоговой цитаты"*/
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.main .choosen-pet {
+  width: 25%;
+  align-self: center;
+  justify-self: center;
+}
+
+.choosen-pet img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 5vh auto;
+}
+
+.main p {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  font-size: 3.1vh;
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+}
+
+/* Footer */
+
+.footer {
+  height: 20vh;
+  width: 100%;
+  padding: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer p {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  padding: 50vh auto 0;
+  margin: 0 auto 2vh;
+  width: 50%;
+}
+
+.link {
+  width: 30%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link a img {
+  width: 4vw;
+}
+
+.link a img:nth-child(2) {
+  border: 20px solid black;
+}
+/*
+/*Обводка кнопки*/
+
+.invisible2 {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  body {
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+    min-width: 768px;
+  }
+
+  .mood p {
+    font-size: 2.5em;
+    width: 80%;
+  }
+
+  .button .icons {
+    width: 2em;
+  }
+
+  .button span {
+    font-size: 1.8em;
+    width: 100%;
+  }
+
+  .pets p {
+    font-size: 2.5em;
+    width: 80%;
+  }
+
+  .choice div .button .cats,
+  .choice div .button .dogs {
+    width: 15em;
+    height: 15em;
+  }
+
+  .main .choosen-pet {
+    width: 50%;
+  }
+
+  .main p {
+    font-size: 1.8em;
+  }
+
+  .footer p {
+    font-size: 0.5em;
+    margin-top: 5em;
+  }
+
+  .link a img {
+    width: 1.5em;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    width: 100%;
+    max-width: 767px;
+    height: auto;
+    min-width: 300px;
+  }
+
+  .mood {
+    justify-content: center;
+  }
+
+  .mood p {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .button {
+    margin: 0;
+  }
+
+  .button span {
+    font-size: 0.7em;
+    width: 100%;
+  }
+
+  .pets p {
+    margin: 0 auto;
+    font-size: 1em;
+    width: 80%;
+  }
+
+  .choice div .button .cats,
+  .choice div .button .dogs {
+    width: 9em;
+    height: 9em;
+  }
+
+  .main .choosen-pet {
+    width: 50%;
+  }
+
+  .main p {
+    font-size: 1em;
+  }
+
+  .footer p {
+    font-size: 0.5em;
+    margin-top: 2em;
+  }
+
+  .link {
+    width: 80%;
+  }
+
+  .link a img {
+    width: 1em;
+  }
+}
